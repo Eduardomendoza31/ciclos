@@ -18,7 +18,7 @@ operadores aritmeticos son: suma(+) resta(-), multiplicacion(*), divicion(/), mo
         
     }*/
 
- var tamanio=prompt("Ingrese el tamaño del arreglo")
+ /*var tamanio=prompt("Ingrese el tamaño del arreglo")
      tamanio=parseInt(tamanio)
      var notas= [tamanio]
     for(j=0;j<=tamanio;j++){
@@ -27,29 +27,81 @@ operadores aritmeticos son: suma(+) resta(-), multiplicacion(*), divicion(/), mo
     }
     for(j=0;j<=tamanio;j++){
         document.write (notas);
-    }
+    }*/
 
     //Buscar numero mayor y menor
-    /* var tamanio = parseInt(tamanio);  
-    var notas = new Array(tamanio);  
+    /*var tamanio = prompt("Ingrese el tamaño del arreglo");
+    tamanio = parseInt(tamanio);
+    var notas = [];
     
-    // Llenar el arreglo con las notasfor (var j =0; j < tamanio; j++) {  
-     notas[j] = parseInt(prompt("Ingrese la nota " + (j +1))); // Se usa j+1 para mostrar el número correcto de nota}  
+    for (var j = 0; j < tamanio; j++) {
+        notas[j] = parseInt(prompt("Ingrese la nota " + (j + 1)));
+    }
     
-    // Inicializar las variables para el número mayor y menorvar mayor = notas[0];  
-    var menor = notas[0];  
+    // Mostrar las notas ingresadas
+    document.write("Notas ingresadas: " + notas + "<br>");
     
-    // Buscar el número mayor y menor en el arreglofor (var j =1; j < tamanio; j++) {  
-     if (notas[j] > mayor) {  
-     mayor = notas[j];  
-     }  
-     if (notas[j] < menor) {  
-     menor = notas[j];  
-     }  
-      
+    // Inicializamos las variables mayor y menor con el primer valor del arreglo
+    var mayor = notas[0];
+    var menor = notas[0];
     
-    // Mostrar las notas, el número mayor y el número menordocument.write("Notas: " + notas + "<br>");  
-    document.write("Número mayor: " + mayor + "<br>");  
-    document.write("Número menor: " + menor + "<br>");*/
+    // Recorremos el arreglo para encontrar el mayor y el menor
+    for (var j = 1; j < tamanio; j++) {
+        if (notas[j] > mayor) {
+            mayor = notas[j];
+        }
+        if (notas[j] < menor) {
+            menor = notas[j];
+        }
+    }
+    
+    // Mostrar el mayor y el menor
+    document.write("La nota mayor es: " + mayor + "<br>");
+    document.write("La nota menor es:"+ menor);  */
     
 
+ 
+    /*var tamanio = parseInt(prompt("ingresa el tamaño del arreglo"))
+    var arreglo = [tamanio]
+    //inicial
+    mayor=arreglo[0]
+    menor=arreglo[0]
+    for(i=0; i<tamanio;i++){
+        arreglo[i]=(parseInt(prompt("ingreso el numero " + (i+1))));
+    }
+    //imprimimos en pantalla los datos
+    document.write(arreglo)
+    for(i=0; i<tamanio;i++){
+        if(arreglo[i]>mayor){
+            mayor=arreglo[i]
+        }
+        if(arreglo[i]<menor){
+            menor=arreglo[i]
+        }
+    }
+    document.write("el numero mayor es " + mayor + "<br>" )
+    document.write("el numero menor es " + menor )*/
+
+    //en clase
+    
+
+
+/*var numero=prompt("Ingrese el número")
+//va a contar la veces que se repite el numero 0
+var contador= 0
+//realizo un ciclo desde 1 hasta el numero ingresado
+//y se va a incrementar en 1
+for(i=1; i<=numero;i++){
+    modulo=numero%i
+    if(modulo==0){
+    contador=contador+1
+
+    }
+    document.write(modulo +("<br>"))
+}
+
+if(contador==2){
+    document.write("el número es primo")
+}else[
+    document.write("El número no es primo")
+]*/
